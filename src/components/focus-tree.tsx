@@ -70,6 +70,7 @@ export default function FocusTree() {
             }
 
             router.push(searchParam.get("next") as string);
+
           }}
         />
       </motion.div>
