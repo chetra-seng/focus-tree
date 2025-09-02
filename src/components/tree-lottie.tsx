@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import treeLottie from "../app/tree.json";
+import treeLottie from "../../public/tree.json";
 import Lottie from "lottie-react";
 
 export default function TreeLottie() {
