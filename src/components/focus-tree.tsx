@@ -1,7 +1,6 @@
 "use client";
 
 import { useRouter, useSearchParams } from "next/navigation";
-import AttractButton from "./kokonutui/attract-button";
 import TreeLottie from "./tree-lottie";
 import { motion } from "motion/react";
 
@@ -53,26 +52,6 @@ export default function FocusTree() {
         <motion.p className="text-xs md:text-lg text-gray-700" variants={item}>
           Your future self will thank you for what you do right now.
         </motion.p>
-      </motion.div>
-      <motion.div
-        variants={item}
-        initial={"initial"}
-        animate={"animate"}
-        transition={{ delay: 0.5 }}
-        className="mt-6 md:mt-10"
-      >
-        <AttractButton
-          particleCount={12}
-          attractRadius={15}
-          onClick={() => {
-            if (!searchParam.has("next")) {
-              return;
-            }
-
-            router.push(searchParam.get("next") as string);
-
-          }}
-        />
       </motion.div>
     </motion.main>
   );
