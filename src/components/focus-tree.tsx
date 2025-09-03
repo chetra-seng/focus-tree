@@ -1,6 +1,5 @@
 "use client";
 
-import { useRouter, useSearchParams } from "next/navigation";
 import TreeLottie from "./tree-lottie";
 import { motion } from "motion/react";
 
@@ -10,13 +9,10 @@ export default function FocusTree() {
     animate: { opacity: 1, y: 0 },
   };
 
-  const router = useRouter();
-  const searchParam = useSearchParams();
-
   return (
     <motion.main className="flex flex-col w-screen h-screen relative items-center justify-center">
       <motion.div
-        className="size-[10rem] md:size-[28rem]"
+        className="size-[8rem] md:size-[14rem] lg:size-[28rem]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.3 }}
